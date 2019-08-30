@@ -4,7 +4,7 @@
 #
 Name     : mvn-pdfbox
 Version  : 2.0.4
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/org/apache/pdfbox/fontbox/2.0.4/fontbox-2.0.4.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/pdfbox/fontbox/2.0.4/fontbox-2.0.4.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/pdfbox/fontbox/2.0.4/fontbox-2.0.4.pom
