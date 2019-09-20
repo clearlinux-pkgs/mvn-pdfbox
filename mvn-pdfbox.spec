@@ -4,22 +4,24 @@
 #
 Name     : mvn-pdfbox
 Version  : 2.0.4
-Release  : 4
+Release  : 5
 URL      : https://repo1.maven.org/maven2/org/apache/pdfbox/fontbox/2.0.4/fontbox-2.0.4.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/pdfbox/fontbox/2.0.4/fontbox-2.0.4.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/pdfbox/fontbox/2.0.4/fontbox-2.0.4.pom
-Source2  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox-parent/2.0.4/pdfbox-parent-2.0.4.pom
-Source3  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox-parent/2.0.8/pdfbox-parent-2.0.8.pom
-Source4  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.3/pdfbox-2.0.3.jar
-Source5  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.3/pdfbox-2.0.3.pom
-Source6  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.4/pdfbox-2.0.4.jar
-Source7  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.4/pdfbox-2.0.4.pom
-Source8  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.jar
-Source9  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.pom
-Source10  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.9/pdfbox-2.0.9.jar
-Source11  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.9/pdfbox-2.0.9.pom
-Source12  : https://repo1.maven.org/maven2/org/apache/pdfbox/xmpbox/2.0.8/xmpbox-2.0.8.jar
-Source13  : https://repo1.maven.org/maven2/org/apache/pdfbox/xmpbox/2.0.8/xmpbox-2.0.8.pom
+Source2  : https://repo1.maven.org/maven2/org/apache/pdfbox/fontbox/2.0.8/fontbox-2.0.8.jar
+Source3  : https://repo1.maven.org/maven2/org/apache/pdfbox/fontbox/2.0.8/fontbox-2.0.8.pom
+Source4  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox-parent/2.0.4/pdfbox-parent-2.0.4.pom
+Source5  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox-parent/2.0.8/pdfbox-parent-2.0.8.pom
+Source6  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.3/pdfbox-2.0.3.jar
+Source7  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.3/pdfbox-2.0.3.pom
+Source8  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.4/pdfbox-2.0.4.jar
+Source9  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.4/pdfbox-2.0.4.pom
+Source10  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.jar
+Source11  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.pom
+Source12  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.9/pdfbox-2.0.9.jar
+Source13  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/2.0.9/pdfbox-2.0.9.pom
+Source14  : https://repo1.maven.org/maven2/org/apache/pdfbox/xmpbox/2.0.8/xmpbox-2.0.8.jar
+Source15  : https://repo1.maven.org/maven2/org/apache/pdfbox/xmpbox/2.0.8/xmpbox-2.0.8.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -62,41 +64,47 @@ cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/fontb
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/fontbox/2.0.4
 cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/fontbox/2.0.4/fontbox-2.0.4.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/fontbox/2.0.8
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/fontbox/2.0.8/fontbox-2.0.8.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/fontbox/2.0.8
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/fontbox/2.0.8/fontbox-2.0.8.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox-parent/2.0.4
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox-parent/2.0.4/pdfbox-parent-2.0.4.pom
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox-parent/2.0.4/pdfbox-parent-2.0.4.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox-parent/2.0.8
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox-parent/2.0.8/pdfbox-parent-2.0.8.pom
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox-parent/2.0.8/pdfbox-parent-2.0.8.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.3
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.3/pdfbox-2.0.3.jar
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.3/pdfbox-2.0.3.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.3
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.3/pdfbox-2.0.3.pom
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.3/pdfbox-2.0.3.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.4
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.4/pdfbox-2.0.4.jar
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.4/pdfbox-2.0.4.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.4
-cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.4/pdfbox-2.0.4.pom
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.4/pdfbox-2.0.4.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.8
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.jar
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.8
-cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.pom
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.9
-cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.9/pdfbox-2.0.9.jar
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.9/pdfbox-2.0.9.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.9
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.9/pdfbox-2.0.9.pom
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.9/pdfbox-2.0.9.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/xmpbox/2.0.8
-cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/xmpbox/2.0.8/xmpbox-2.0.8.jar
+cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/xmpbox/2.0.8/xmpbox-2.0.8.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/xmpbox/2.0.8
-cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/xmpbox/2.0.8/xmpbox-2.0.8.pom
+cp %{SOURCE15} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/xmpbox/2.0.8/xmpbox-2.0.8.pom
 
 
 %files
@@ -106,6 +114,8 @@ cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/pdfbox/xmpb
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/org/apache/pdfbox/fontbox/2.0.4/fontbox-2.0.4.jar
 /usr/share/java/.m2/repository/org/apache/pdfbox/fontbox/2.0.4/fontbox-2.0.4.pom
+/usr/share/java/.m2/repository/org/apache/pdfbox/fontbox/2.0.8/fontbox-2.0.8.jar
+/usr/share/java/.m2/repository/org/apache/pdfbox/fontbox/2.0.8/fontbox-2.0.8.pom
 /usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox-parent/2.0.4/pdfbox-parent-2.0.4.pom
 /usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox-parent/2.0.8/pdfbox-parent-2.0.8.pom
 /usr/share/java/.m2/repository/org/apache/pdfbox/pdfbox/2.0.3/pdfbox-2.0.3.jar
